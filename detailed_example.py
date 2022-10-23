@@ -30,7 +30,7 @@ def pipeline(
     training.add_node_selector_constraint(
         'nvidia.com/gpu.product', gpu_type)
 
-    # end ENV variables
+    # add ENV variables
     training_env_var = {
         "PYTHONPATH": ".",
         "MINIO_SITE_URL": "https://minio.your.domain",
